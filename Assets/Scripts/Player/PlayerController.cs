@@ -101,6 +101,8 @@ public class PlayerController : Singleton<PlayerController>
     public void SetInvincible(bool b = true)
     {
         invincible = b;
+
+        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Default"), LayerMask.NameToLayer("Enemy"), invincible);
     }
 
     public void ChangeHeight(float amount, float duration, float animationDuration, Ease ease)
