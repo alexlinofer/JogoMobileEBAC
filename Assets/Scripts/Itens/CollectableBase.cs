@@ -27,7 +27,13 @@ public class CollectableBase : MonoBehaviour
 
     protected virtual void Collect()
     {
-        if(graphicItem != null) graphicItem.SetActive(false);
+        HideItens();
+        OnCollect();
+    }
+
+    protected virtual void HideItens()
+    {
+        if (graphicItem != null)graphicItem.SetActive(false);
         Invoke("HideObject", timeToHide);
     }
 
@@ -40,6 +46,7 @@ public class CollectableBase : MonoBehaviour
     {
         if (particleSystem != null) particleSystem.Play();
         if(audioSource != null) audioSource.Play();
+        Debug.Log("Collect");
     }
 }
 
