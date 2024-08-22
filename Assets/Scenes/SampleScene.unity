@@ -1204,7 +1204,7 @@ Transform:
   m_GameObject: {fileID: 901765129}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: -0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1321,7 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbc8491460168b4cbe43cfa04a739b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   tagToCheckEnemy: Enemy
   tagToCheckEndLine: EndLine
   endScreen: {fileID: 1910184670}
@@ -1552,7 +1552,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18888652, y: -0.00000008592478, z: 0.000000016527546, w: 0.9819989}
-  m_LocalPosition: {x: 0, y: 2.4099998, z: -3.83}
+  m_LocalPosition: {x: 0, y: 1.9699999, z: -3.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1879,7 +1879,7 @@ Transform:
   m_GameObject: {fileID: 1585139189}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18888652, y: -0.00000008592478, z: 0.000000016527546, w: 0.9819989}
-  m_LocalPosition: {x: 0, y: 2.4099998, z: -3.83}
+  m_LocalPosition: {x: 0, y: 1.9699999, z: -3.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2492,7 +2492,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -3277,7 +3277,7 @@ PrefabInstance:
     - target: {fileID: 6745917265147829161, guid: e441e07e04f56e24bb7f59af8ea893b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.14
+      value: 13.25
       objectReference: {fileID: 0}
     - target: {fileID: 6745917265147829161, guid: e441e07e04f56e24bb7f59af8ea893b9,
         type: 3}
