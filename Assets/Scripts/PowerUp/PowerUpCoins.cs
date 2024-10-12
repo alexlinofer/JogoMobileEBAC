@@ -11,12 +11,14 @@ public class PowerUpCoins : PowerUpBase
     {
         base.StartPowerUp();
         PlayerController.Instance.ChangeCoinCollectorSize(sizeAmount);
+        PlayerController.Instance.SetPowerUpText("Coin Collector");
     }
 
     protected override void EndPowerUp()
     {
         base.EndPowerUp();
         PlayerController.Instance.ChangeCoinCollectorSize(1);
+        PlayerController.Instance.SetPowerUpText("");
     }
 
 }
