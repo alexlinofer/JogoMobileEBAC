@@ -36,10 +36,13 @@ namespace JogoMobile.Singleton
             {
                 _instance = this as T;
                 DontDestroyOnLoad(gameObject);
+                Debug.Log("Singleton Instance Created: " + typeof(T).ToString());
             }
-            else
+            else if (_instance != this)
             {
-                Destroy(gameObject);
+                Debug.LogWarning("Instance already exists, not destroying: " + gameObject.name);
+                // Ao invés de destruir, apenas ignora o novo e mantém o existente
+                return;
             }
         }
     }
