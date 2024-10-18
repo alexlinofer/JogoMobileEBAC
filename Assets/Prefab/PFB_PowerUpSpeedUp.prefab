@@ -156,4 +156,4 @@ MonoBehaviour:
   graphicItem: {fileID: 5861729444130307091}
   audioSource: {fileID: 0}
   duration: 2
-  amountToSpeed: 9
+  amountToSpeed: 12

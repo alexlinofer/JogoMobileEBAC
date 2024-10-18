@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbc8491460168b4cbe43cfa04a739b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   tagToCheckEnemy: Enemy
   tagToCheckEndLine: EndLine
   endScreen: {fileID: 1910184670}
@@ -1295,8 +1295,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18888652, y: -0.00000008592478, z: 0.000000016527546, w: 0.9819989}
-  m_LocalPosition: {x: 0, y: 1.9699999, z: -3.83}
+  m_LocalRotation: {x: 0.19964524, y: -0.00000001340738, z: 0.000000002731714, w: 0.97986823}
+  m_LocalPosition: {x: 0, y: 4.16, z: -8.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1557,8 +1557,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585139189}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18888652, y: -0.00000008592478, z: 0.000000016527546, w: 0.9819989}
-  m_LocalPosition: {x: 0, y: 1.9699999, z: -3.83}
+  m_LocalRotation: {x: 0.19964524, y: -0.00000001340738, z: 0.000000002731714, w: 0.97986823}
+  m_LocalPosition: {x: 0, y: 4.16, z: -8.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 2.81, z: -3.83}
+  m_FollowOffset: {x: 0, y: 5, z: -8.75}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
