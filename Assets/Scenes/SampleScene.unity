@@ -981,6 +981,7 @@ GameObject:
   - component: {fileID: 901765135}
   - component: {fileID: 901765136}
   - component: {fileID: 901765137}
+  - component: {fileID: 901765138}
   m_Layer: 0
   m_Name: PlayerContainer
   m_TagString: Player
@@ -1124,6 +1125,7 @@ MonoBehaviour:
   lerpSpeed: 3
   coinCollector: {fileID: 5183571}
   animatorManager: {fileID: 1401386020}
+  playerScale: {fileID: 901765138}
   _bounceHelper: {fileID: 901765137}
 --- !u!114 &901765137
 MonoBehaviour:
@@ -1140,6 +1142,20 @@ MonoBehaviour:
   scaleDuration: 0.1
   scaleBounce: 1.2
   ease: 27
+--- !u!114 &901765138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901765129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4663827d8e56bbb49be7e4b46ab51f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleDuration: 2
+  ease: 30
 --- !u!1 &949399041
 GameObject:
   m_ObjectHideFlags: 0
