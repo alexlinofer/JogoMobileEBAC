@@ -10,6 +10,8 @@ public class BounceHelper : MonoBehaviour
     public float scaleBounce = 1.2f;
     public Ease ease = Ease.OutBounce;
 
+    private Tweener _currentTweener;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.L)) Bounce();
@@ -17,6 +19,12 @@ public class BounceHelper : MonoBehaviour
 
     public void Bounce()
     {
-        transform.DOScale(scaleBounce, scaleDuration).SetEase(ease).SetLoops(2, LoopType.Yoyo);
+        if(_currentTweener.IsActive())
+        {
+            transform.localScale = Vector3.one;
+            _currentTweener.Kill();
+        }
+
+        _currentTweener = transform.DOScale(scaleBounce, scaleDuration).SetEase(ease).SetLoops(2, LoopType.Yoyo);
     }
 }

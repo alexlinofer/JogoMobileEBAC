@@ -47,6 +47,7 @@ public class CollectableBase : MonoBehaviour
         if (particleSystem != null) particleSystem.Play();
         if(audioSource != null) audioSource.Play();
         Debug.Log("Collect");
+        PlayerController.Instance.Bounce();
     }
 }
 

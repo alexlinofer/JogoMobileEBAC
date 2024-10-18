@@ -38,7 +38,6 @@ public class CollectableCoin : CollectableBase
         base.OnCollect();
         collider.enabled = false;
         collect = true;
-        PlayerController.Instance.Bounce();
     }
 
     private void OnDestroy() 
