@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 901765132}
   - component: {fileID: 901765135}
   - component: {fileID: 901765136}
+  - component: {fileID: 901765137}
   m_Layer: 0
   m_Name: PlayerContainer
   m_TagString: Player
@@ -1123,6 +1124,22 @@ MonoBehaviour:
   lerpSpeed: 3
   coinCollector: {fileID: 5183571}
   animatorManager: {fileID: 1401386020}
+  _bounceHelper: {fileID: 901765137}
+--- !u!114 &901765137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901765129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86948364436457f46ae3947fe45f9b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleDuration: 0.1
+  scaleBounce: 1.2
+  ease: 27
 --- !u!1 &949399041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1361,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19964524, y: -0.00000001340738, z: 0.000000002731714, w: 0.97986823}
-  m_LocalPosition: {x: 0, y: 4.01, z: -8.75}
+  m_LocalPosition: {x: 0, y: 4.01, z: -8.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1609,7 +1626,7 @@ Transform:
   m_GameObject: {fileID: 1585139189}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19964524, y: -0.00000001340738, z: 0.000000002731714, w: 0.97986823}
-  m_LocalPosition: {x: 0, y: 4.01, z: -8.75}
+  m_LocalPosition: {x: 0, y: 4.01, z: -8.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2025,7 +2042,7 @@ Transform:
   m_GameObject: {fileID: 1808057626}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

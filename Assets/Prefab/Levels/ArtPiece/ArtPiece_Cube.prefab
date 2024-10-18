@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3062117476561915836}
   - component: {fileID: 4774275252911433447}
   - component: {fileID: 4685904035430910871}
+  - component: {fileID: 2589016501753902686}
   m_Layer: 0
   m_Name: ArtPiece_Cube
   m_TagString: Untagged
@@ -105,3 +106,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2589016501753902686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860191057904374414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87af572c9bce8d94b8063af87a5192f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  meshRenderer: {fileID: 4774275252911433447}
+  duration: 1
