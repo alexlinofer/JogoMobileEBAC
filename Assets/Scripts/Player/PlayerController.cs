@@ -29,6 +29,13 @@ public class PlayerController : Singleton<PlayerController>
     public PlayerScale playerScale;
     [SerializeField] private BounceHelper _bounceHelper;
 
+    [Header("ParticleSystem")]
+    public ParticleSystem vfxDeath;
+
+    [Header("Limits")]
+    public float limit = 4;
+    public Vector2 limitVector = new Vector2(-4, 4);
+
 
     //privates
     private Vector3 _pos;
@@ -54,6 +61,9 @@ public class PlayerController : Singleton<PlayerController>
         _pos.y = transform.position.y;
         _pos.z = transform.position.z;
 
+        if (_pos.x < limitVector.x) _pos.x = limitVector.x;
+        if(_pos.x > limitVector.y) _pos.x = limitVector.y;
+
         transform.position = Vector3.Lerp(transform.position, _pos, Time.deltaTime * lerpSpeed);
         transform.Translate(transform.forward * _currentSpeed * Time.deltaTime);
     }
@@ -69,7 +79,8 @@ public class PlayerController : Singleton<PlayerController>
         if(collision.transform.tag == tagToCheckEnemy)
         {
             MoveBack(collision.transform);
-            if(!invincible) EndGame(AnimatorManager.AnimationType.DEAD);
+            if (vfxDeath != null) vfxDeath.Play();
+            if (!invincible) EndGame(AnimatorManager.AnimationType.DEAD);
         }
 
     }
